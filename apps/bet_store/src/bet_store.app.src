@@ -1,0 +1,22 @@
+{application, bet_store,
+ [
+  {description, "In-memory key value store, supporting TCP/UDP and REST communication."},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { bet_store_app, []}},
+  {env, [
+         {http_server_port, 8080}, 
+         {http_server_name, "bet_store_server"},
+         {http_server_root_dir, "/tmp/"},
+         {http_server_document_dir, "/tmp/"},
+         {http_server_log_error, "http_error.log"},
+         {http_server_log_transfer, "http_access.log"},
+         {http_server_log_security, "http_security.log"},
+         {tcp_listener_port, 8101},
+         {udp_listener_port, 8102}
+  ]}
+ ]}.

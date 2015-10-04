@@ -1,0 +1,4 @@
+%% encoding: UTF-8
+{application,bet_hub}.
+{packages,[]}.
+{modules,[bet_hub_app,bet_hub_sup]}.

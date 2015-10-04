@@ -1,0 +1,12 @@
+{application, bet_hub,
+ [
+  {description, "In-memory message hub, supporting TCP & UDP communication."},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { bet_hub_app, []}},
+  {env, []}
+ ]}.

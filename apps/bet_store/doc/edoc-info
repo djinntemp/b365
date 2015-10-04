@@ -1,0 +1,5 @@
+%% encoding: UTF-8
+{application,bet_store}.
+{packages,[]}.
+{modules,[bet_store_app,bet_store_sup,data_storage,http_helpers,
+          http_rest_handler,http_server,http_store_filter,network_server]}.
